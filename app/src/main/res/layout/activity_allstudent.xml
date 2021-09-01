@@ -1,0 +1,47 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/allstudtoolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways"-->
+            <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+    <!--</android.support.design.widget.AppBarLayout>-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:padding="6dip">
+
+            <ProgressBar
+                android:id="@+id/allstudentProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"/>
+            <SearchView
+                android:id="@+id/search_view_student"
+                android:background="@drawable/edittext_style"
+                android:layout_width="match_parent"
+                android:focusable="false"
+                android:layout_height="50dp"/>
+            <ListView
+                android:id="@+id/allstudent_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+            </ListView>
+        </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

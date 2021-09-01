@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView151"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Show In List"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:background="@drawable/shadow_tile"
+            android:textStyle="bold" />
+
+
+
+        <FrameLayout
+            android:id="@+id/cal1_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/transparent" >
+        </FrameLayout>
+        <ListView
+            android:id="@+id/holidaylist1"
+            android:layout_width="match_parent"
+            android:layout_height="465dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/transparent"
+            android:layout_below="@+id/cal_container"
+            android:layout_toEndOf="@+id/cal_container"
+            android:layout_toRightOf="@+id/cal_container"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

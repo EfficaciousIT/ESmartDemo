@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ProgressBar
+        android:id="@+id/mondayProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:id="@+id/monday_list"
+        android:layout_width="match_parent"
+        android:layout_height="477dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="4dp"></ListView>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/disable_cell"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/PeriodTime_studenttimetable"
+            android:layout_width="130dp"
+            android:paddingLeft="5dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="Time"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Subject_studenttimetable"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/PeriodTime_studenttimetable"
+            android:gravity="left|center_vertical"
+            android:text="Subject"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Teacher_studenttimetable"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/Subject_studenttimetable"
+            android:layout_weight="0.5"
+            android:gravity="center|center_vertical"
+            android:text="Teacher"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="244dp"-->
+        <!--android:layout_height="33dp"-->
+        <!--android:layout_above="@+id/monday_list"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginBottom="-32dp"-->
+        <!--android:layout_marginStart="140dp">-->
+
+        <!--<RadioGroup-->
+            <!--android:id="@+id/radio_group"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="129dp"-->
+        <!--android:layout_height="33dp"-->
+        <!--android:layout_alignStart="@+id/relativeLayout"-->
+        <!--android:layout_below="@+id/mondayProgressBar">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView39"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginStart="11dp"-->
+            <!--android:text="Division"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textStyle="bold" />-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

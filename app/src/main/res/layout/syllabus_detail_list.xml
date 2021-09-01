@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_tile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/std_namerelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/StdNametv"
+               android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Standard: "
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/StdName"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/StdNametv"
+                android:text="textview1"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/fromdate_Leave"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/StdName"
+               android:layout_marginLeft="15dp"
+                android:text="Subject:     "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/subname"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/fromdate_Leave"
+                android:layout_alignParentTop="true"
+                android:text="textview1"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/attachmntrelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0"
+
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/downloadimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/profile"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/downloadimg2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/profile"
+
+                android:layout_marginStart="20dp" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/downloadimg3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:src="@mipmap/profile"
+                android:layout_marginStart="20dp"
+                />
+            <!--<ImageView-->
+            <!--android:id="@+id/downloadimg"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:background="@drawable/dwnloadbtn" />-->
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subdetail"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="textview"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

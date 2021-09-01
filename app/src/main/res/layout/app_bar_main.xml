@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/side_nav_bar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_img"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/profile"
+                android:layout_gravity="end"
+                />
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chating_imgbtn"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/support"
+                android:layout_gravity="end"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+   >
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabLiveTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/fabbutton"
+        app:srcCompat="@mipmap/livetrack" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabFleetStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fabLiveTrack"
+        app:backgroundTint="@color/fabbutton"
+        app:srcCompat="@mipmap/fleet" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabTrackingStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fabFleetStatus"
+        app:backgroundTint="@color/fabbutton"
+        app:srcCompat="@mipmap/tracksts" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabReplayStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fabTrackingStatus"
+        app:backgroundTint="@color/fabbutton"
+        app:srcCompat="@mipmap/replay" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fabReplayStatus"
+
+        app:backgroundTint="@color/fabbutton"
+        app:srcCompat="@mipmap/track"
+       />
+</RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

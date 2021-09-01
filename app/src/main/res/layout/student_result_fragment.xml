@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:paddingBottom="10dp">
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:id="@+id/relativename"
+    android:paddingStart="10dp">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="true"
+        android:paddingTop="10dp"
+        android:id="@+id/nametv"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard:"
+        android:id="@+id/std"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/nametv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard "
+        android:id="@+id/stdtv"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="2dp"
+        android:layout_alignBaseline="@+id/std"
+        android:layout_toEndOf="@+id/std"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Division:"
+        android:id="@+id/div"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:layout_alignBaseline="@+id/std"
+        android:layout_toEndOf="@+id/stdtv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Division "
+        android:id="@+id/divtv"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="2dp"
+        android:layout_alignBaseline="@+id/std"
+        android:layout_toEndOf="@+id/div"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="true"
+        android:paddingTop="10dp"
+        android:id="@+id/spinnerexamname"
+        android:layout_below="@+id/std"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marks:"
+        android:id="@+id/mark"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/spinnerexamname"/>
+        <ListView
+            android:layout_marginTop="10dp"
+            android:id="@+id/resultListview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mark">
+
+        </ListView>
+
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

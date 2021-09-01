@@ -1,0 +1,61 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Show In List"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/shadow_tile"/>
+
+        <FrameLayout
+            android:id="@+id/cal_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/transparent"
+            >
+
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/holidaylist"
+            android:layout_width="match_parent"
+            android:layout_height="465dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/transparent"
+            android:layout_below="@+id/cal_container"
+            android:layout_toEndOf="@+id/cal_container"
+            android:layout_toRightOf="@+id/cal_container"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

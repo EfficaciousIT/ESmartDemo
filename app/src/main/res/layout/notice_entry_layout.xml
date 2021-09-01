@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/usertype_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@color/transparent"
+        >
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/usertype_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="4dp"-->
+            <!--android:text="User Type :"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="18sp"-->
+            <!--/>-->
+
+        <Spinner
+            android:id="@+id/spinner_usertype"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:elevation="4dp"
+            android:padding="0dp"
+            android:layout_toEndOf="@+id/usertype_tv"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/std_relativee"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:layout_marginTop="1dp"
+        android:background="@color/transparent"
+       android:layout_below="@+id/usertype_relative">
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/std_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="4dp"-->
+            <!--android:text="Standard   :"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="18sp"-->
+            <!--/>-->
+
+        <Spinner
+            android:layout_marginTop="5dp"
+            android:id="@+id/spinner_standard"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:elevation="4dp"
+            android:padding="0dp"
+
+            android:layout_toEndOf="@+id/std_tv"  />
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/std_relativee"
+
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/notice_issueDate"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:inputType="number"
+            android:hint="Notice Issue Date" />
+        <EditText
+            android:id="@+id/notice_end_date"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:inputType="number"
+            android:padding="20dp"
+            android:hint="Notice End Date" />
+
+
+            <EditText
+                android:id="@+id/subject_notice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:elevation="4dp"
+                android:hint="Subject"
+                android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/notice_et"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:inputType="textImeMultiLine|textLongMessage"
+            android:hint="Write Notice Here " />
+
+            <LinearLayout
+                android:id="@+id/middle_linear"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

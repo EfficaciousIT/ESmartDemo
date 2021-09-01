@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group >
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@mipmap/dashboard1"
+            android:title="Dashboard" />
+
+        <item android:title="Attendence">
+            <menu>
+                <item
+                    android:id="@+id/nav_studentAttendence"
+                    android:icon="@mipmap/student"
+                    android:title="Student" />
+                <item
+                    android:id="@+id/nav_teacherAttendence"
+                    android:icon="@mipmap/teacher"
+                    android:title="Teacher" />
+
+            </menu>
+        </item>
+
+        <item android:title="Study">
+            <menu>
+                <item
+                    android:id="@+id/nav_syllabus"
+                    android:icon="@mipmap/syllabus1"
+                    android:title="Syllabus" />
+                <item
+                    android:id="@+id/nav_timetable"
+                    android:icon="@mipmap/timetable"
+                    android:title="Timetable" />
+                <item
+                    android:id="@+id/nav_examination"
+                    android:icon="@mipmap/exam_timetable"
+                    android:title="Examination" />
+                <item
+                    android:id="@+id/nav_Homework"
+                    android:icon="@mipmap/home_work"
+                    android:title="Home Work" />
+                <item
+                    android:id="@+id/nav_Diary"
+                    android:icon="@mipmap/study"
+                    android:title="Daily Diary" />
+                <item
+                    android:id="@+id/nav_Result"
+                    android:icon="@mipmap/result"
+                    android:title="Result" />
+                <item
+                    android:id="@+id/nav_payment"
+                    android:icon="@mipmap/payment1"
+                    android:title="Payment" />
+            </menu>
+        </item>
+        <item android:title="Event">
+            <menu>
+                <item
+                    android:id="@+id/nav_calender"
+                    android:icon="@mipmap/calendar"
+                    android:title="Calender" />
+                <item
+                    android:id="@+id/nav_leave"
+                    android:icon="@mipmap/leave"
+                    android:title="Leave" />
+                <item
+                    android:id="@+id/nav_Event"
+                    android:icon="@mipmap/leave"
+                    android:title="Event Registration" />
+            </menu>
+        </item>
+        <!-- <item
+             android:id="@+id/nav_library"
+             android:icon="@mipmap/library"
+             android:title="Library" />-->
+
+
+        <item android:title="Alert">
+            <menu>
+                <item
+                    android:id="@+id/nav_noticeboard"
+                    android:icon="@mipmap/notice_board"
+                    android:title="Noticeboard" />
+                <item
+                    android:id="@+id/nav_messageCenter"
+                    android:icon="@mipmap/bell"
+                    android:title="Notification" />
+                <item
+                    android:id="@+id/nav_message"
+                    android:icon="@mipmap/message_center"
+                    android:title="Messaging" />
+            </menu>
+        </item>
+
+        <item android:title="Gallery">
+            <menu>
+                <item
+                    android:id="@+id/nav_Gallery"
+                    android:icon="@mipmap/gallery"
+                    android:title="Gallery" />
+            </menu>
+        </item>
+
+    </group>
+</menu>
+

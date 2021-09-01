@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "536215720699",
+    "firebase_url": "https://esmart-2bffc.firebaseio.com",
+    "project_id": "esmart-2bffc",
+    "storage_bucket": "esmart-2bffc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536215720699:android:0681441affaf4137",
+        "android_client_info": {
+          "package_name": "com.mobi.efficacious.ESmartDemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536215720699-259ar03j6c7rn712lbphf6al8lt7kd6p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobi.efficacious.ESmartDemo",
+            "certificate_hash": "06324932fd2ae527bf83928fbbaffbf3e54e7230"
+          }
+        },
+        {
+          "client_id": "536215720699-8ocau05h8rvva7jhrn3kp3pf93dqv2ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2xOnOeclGlumN5vdCKqb_2ZGfq5Kmn1w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536215720699-8ocau05h8rvva7jhrn3kp3pf93dqv2ei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

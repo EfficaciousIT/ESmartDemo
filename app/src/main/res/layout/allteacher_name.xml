@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent" >
+
+    <LinearLayout
+        android:id="@+id/Linear_allteacher1"
+        android:layout_width="360dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032">
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="66dp"-->
+        <!--android:layout_height="74dp"-->
+        <!--android:background="@color/smokewhite">-->
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/imageView6"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:srcCompat="@drawable/dummy" />&ndash;&gt;-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+           >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/teacher_image"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="2dp"
+                android:src="@mipmap/profile"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/name_allteacher1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="8dp"
+                android:text="TextView"
+                android:layout_toEndOf="@+id/teacher_image"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Dept_allteacher1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_allteacher1"
+                android:layout_alignStart="@+id/name_allteacher1"
+                android:layout_below="@+id/name_allteacher1"
+                android:layout_marginTop="11dp"
+                android:text="TextView"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                app:srcCompat="@mipmap/ic_keyboard_arrow_right_black_24dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

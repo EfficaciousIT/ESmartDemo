@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5564a6</color>
+    <color name="colorPrimary1">#5564a6</color>
+    <color name="colorPrimaryDark">#5564a6</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="smokewhite">#ECF0F5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#FF99CC00</color>
+    <color name="black">#000000</color>
+    <!--<color name="orange">#009688</color>-->
+    <color name="orange">#5564a6</color>
+    <color name="orange1">#ff6347</color>
+    <color name="lightorange">#FFFFBB33</color>
+    <color name="red">#FFFF4444</color>
+    <!--<color name="button">#4DB6AC</color>-->
+    <!--<color name="button1">#009688</color>-->
+    <color name="button">#5564a6</color>
+    <color name="button1">#5564a6</color>
+    <color name="darkgreen">#FF669900</color>
+    <color name="trans">#00000000 </color>
+    <color name="trans1">#00000000 </color>
+    <color name="darkred">#FFCC0000</color>
+    <color name="darkblue">#5564a6</color>
+    <color name="fabbutton">#ffffff</color>
+    <color name="transparent">#aeffffff</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_500">#FFA4A4A4</color>
+</resources>

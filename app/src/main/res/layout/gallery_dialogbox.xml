@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp">
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <!--<ProgressBar-->
+        <!--android:id="@+id/progressbar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="151dp"-->
+        <!--android:layout_marginTop="56dp"-->
+        <!--android:visibility="gone"/>-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:background="@color/orange"
+            android:text="Gallery "
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+<TextView
+    android:id="@+id/Eventtv"
+    android:layout_below="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:textColor="@color/black"
+    android:text="Event Description"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:id="@+id/editText288"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:paddingLeft="10dp"
+    android:background="@drawable/editext_black_bg"
+    android:ems="10"
+    android:gravity="top|left"
+    android:paddingTop="5dp"
+    android:hint="Write Event Description Here"
+    android:inputType="textImeMultiLine|textLongMessage"
+    android:layout_below="@+id/Eventtv"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/editText288">
+            <LinearLayout
+                android:id="@+id/middle_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btnsave"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+    </RelativeLayout>
+        <ImageView
+            android:id="@+id/image"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

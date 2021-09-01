@@ -1,0 +1,215 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <ScrollView
+        android:id="@+id/teacherscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="6dip">
+            <ProgressBar
+                android:id="@+id/teacherdashProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/atten"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Attendance"
+                        android:textColor="@color/white"
+                        style="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tv_Studentteacherdashboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Student"
+                        android:textColor="@color/white"
+                        style="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:textStyle="italic" />
+                    <TextView
+                        android:id="@+id/tv_Teacherdashboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Teacher"
+                        android:textColor="@color/white"
+                        style="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Calender"
+                    android:textColor="@color/black"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textStyle="bold" />
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/darkgreen"-->
+                    <!--android:text="  Present "-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/darkred"-->
+                    <!--android:text="  Absent   "-->
+                    <!--android:textStyle="bold" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:orientation="vertical">
+                    <FrameLayout
+                        android:id="@+id/cal_container_teacher"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+                    </FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Notice Board"
+                    android:textColor="@color/black"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/teacherdashnoticeboard_list">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1400dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Class Wise Student"
+                    android:textColor="@color/black"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:id="@+id/rel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        style="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="match_parent"
+                        android:text="Std"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="left"
+                        android:textColor="@color/black"
+                        style="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:layout_height="match_parent"
+                        android:text="Div"/>
+
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        style="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="match_parent"
+                        android:text="G(M)"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="left"
+                        android:textColor="@color/black"
+                        style="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:layout_height="match_parent"
+                        android:text="G(F)"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="left"
+                        android:textColor="@color/black"
+                        style="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:layout_height="match_parent"
+                        android:text="Total"/>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/teacherdashstud_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
